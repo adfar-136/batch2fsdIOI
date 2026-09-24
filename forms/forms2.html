@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Form Elements</h1>
+    <form>
+
+        <input type="text" name="username" placeholder="Enter Username">
+        <br><br>
+        <label for="">Select Gender</label><br>
+        <input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="F" checked>Female
+        <input type="radio" name="gender" value="O">Other
+        <br><br>
+        <label>Select any skills</label>
+        <input type="checkbox" name="skills" value="html">HTML
+        <input type="checkbox" name="skills" value="css" checked>CSS
+        <input type="checkbox" name="skills" value="js">JS
+        <input type="checkbox" name="skills" value="react">React
+        <br><br>
+        <meter min="0" max="100" low="30" high="80" value="60">
+            65%</meter>
+            <br><br>
+            <progress value="40" max="100">60%</progress>
+
+        <br><br>
+        <textarea name="" id="" rows="13" cols="50" placeholder="Enter Your Feedback"></textarea> 
+        <br><br>
+        <select name="skillls">
+            <optgroup label="Web">
+                <option value="HTML">HTML</option>
+               <option value="CSS">CSS</option>
+             <option value="JS">JS</option>
+             <option value="React">React</option>
+            </optgroup>
+            <optgroup label="Interest">
+                <option value="React">Music</option>
+               <option value="React">Dancing</option>
+               <option value="React">Driving</option>
+            </optgroup>
+            
+
+        </select>
+        <input type="text" list="countries">
+        <datalist id="countries">
+             <option value="India">
+             <option value="America">
+             <option value="UK">
+             <option value="Spain">
+        </datalist>
+    </form>
+</body>
+</html>
