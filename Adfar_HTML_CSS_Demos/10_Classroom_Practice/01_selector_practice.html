@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice — Predict Matching Inputs</title>
+
+    <style>
+        /* Page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 32px;
+            line-height: 1.6;
+            color: #172033;
+        }
+
+        .demo {
+            max-width: 760px;
+            padding: 20px;
+            border: 1px solid #d8deea;
+            border-radius: 12px;
+        }
+
+        .demo > * {
+            margin-bottom: 14px;
+        }
+
+        .sample {
+            padding: 12px;
+            border: 1px solid #bbc5d8;
+            border-radius: 6px;
+        }
+
+        /* Type selector: exact attribute match */
+        input[type="email"] {
+            background-color: #dbeafe;
+        }
+
+        /* Presence selector */
+        input[required] {
+            border: 3px solid #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <!-- @adfarsirofficial | Practice — Predict Matching Inputs -->
+    <h1>Practice — Predict Matching Inputs</h1>
+    <p>Ask students which rule matches each input before opening the page.</p>
+
+    <div class="demo">
+        <input type="email" required placeholder="Email: two rules match">
+        <input type="text" required placeholder="Name: one rule matches">
+        <input type="email" placeholder="Optional email: one rule matches">
+    </div>
+
+    <p><small>Classroom demo by @adfarsirofficial</small></p>
+</body>
+</html>

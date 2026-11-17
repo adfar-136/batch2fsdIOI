@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starts With — [href^=&quot;https&quot;]</title>
+
+    <style>
+        /* Page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 32px;
+            line-height: 1.6;
+            color: #172033;
+        }
+
+        .demo {
+            max-width: 760px;
+            padding: 20px;
+            border: 1px solid #d8deea;
+            border-radius: 12px;
+        }
+
+        .demo > * {
+            margin-bottom: 14px;
+        }
+
+        .sample {
+            padding: 12px;
+            border: 1px solid #bbc5d8;
+            border-radius: 6px;
+        }
+
+        /* ^= matches the beginning of the value */
+        a[href^="https"] {
+            color: #087d42;
+            font-weight: bold;
+            border-bottom: 3px solid #087d42;
+        }
+    </style>
+</head>
+<body>
+    <!-- @adfarsirofficial | Starts With — [href^=&quot;https&quot;] -->
+    <h1>Starts With — [href^=&quot;https&quot;]</h1>
+    
+
+    <div class="demo">
+        <p><a href="https://example.com">HTTPS website — matches</a></p>
+        <p><a href="http://example.com">HTTP website — does not match</a></p>
+        <p><a href="about.html">Relative link — does not match</a></p>
+    </div>
+
+    <p><small>Classroom demo by @adfarsirofficial</small></p>
+</body>
+</html>

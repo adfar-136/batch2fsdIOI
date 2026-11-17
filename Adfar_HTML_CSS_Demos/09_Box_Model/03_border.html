@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model — Border</title>
+
+    <style>
+        /* Page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 32px;
+            line-height: 1.6;
+            color: #172033;
+        }
+
+        .demo {
+            max-width: 760px;
+            padding: 20px;
+            border: 1px solid #d8deea;
+            border-radius: 12px;
+        }
+
+        .demo > * {
+            margin-bottom: 14px;
+        }
+
+        .sample {
+            padding: 12px;
+            border: 1px solid #bbc5d8;
+            border-radius: 6px;
+        }
+
+        /* Border surrounds content and padding */
+        .thin {
+            border: 2px solid #2563eb;
+        }
+
+        .thick {
+            border: 8px dashed #e11d48;
+        }
+    </style>
+</head>
+<body>
+    <!-- @adfarsirofficial | Box Model — Border -->
+    <h1>Box Model — Border</h1>
+    
+
+    <div class="demo">
+        <div class="sample thin">2px solid border</div>
+        <div class="sample thick">8px dashed border</div>
+    </div>
+
+    <p><small>Classroom demo by @adfarsirofficial</small></p>
+</body>
+</html>

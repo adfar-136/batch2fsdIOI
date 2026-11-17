@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contains Substring — [src*=&quot;logo&quot;]</title>
+
+    <style>
+        /* Page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 32px;
+            line-height: 1.6;
+            color: #172033;
+        }
+
+        .demo {
+            max-width: 760px;
+            padding: 20px;
+            border: 1px solid #d8deea;
+            border-radius: 12px;
+        }
+
+        .demo > * {
+            margin-bottom: 14px;
+        }
+
+        .sample {
+            padding: 12px;
+            border: 1px solid #bbc5d8;
+            border-radius: 6px;
+        }
+
+        /* *= finds text anywhere inside the value */
+        img[src*="logo"] {
+            outline: 5px solid #7c3aed;
+            outline-offset: 3px;
+        }
+
+        img {
+            width: 120px;
+            height: 70px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- @adfarsirofficial | Contains Substring — [src*=&quot;logo&quot;] -->
+    <h1>Contains Substring — [src*=&quot;logo&quot;]</h1>
+    <p>The image source is a self-contained SVG; the URL fragment provides a visible attribute match.</p>
+
+    <div class="demo">
+        <!-- SVG data URLs keep the demo offline -->
+        <img alt="Company logo — matches" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='70'%3E%3Crect width='120' height='70' fill='%23d8c8ff'/%3E%3Ctext x='15' y='40' font-size='17'%3ELOGO%3C/text%3E%3C/svg%3E#company-logo">
+        <img alt="Banner — does not match" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='70'%3E%3Crect width='120' height='70' fill='%23c8e4ff'/%3E%3Ctext x='13' y='40' font-size='17'%3EBANNER%3C/text%3E%3C/svg%3E#banner">
+    </div>
+
+    <p><small>Classroom demo by @adfarsirofficial</small></p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial-gradient() — Position</title>
+
+    <style>
+        /* Page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 32px;
+            line-height: 1.6;
+            color: #172033;
+        }
+
+        .demo {
+            max-width: 760px;
+            padding: 20px;
+            border: 1px solid #d8deea;
+            border-radius: 12px;
+        }
+
+        .demo > * {
+            margin-bottom: 14px;
+        }
+
+        .sample {
+            padding: 12px;
+            border: 1px solid #bbc5d8;
+            border-radius: 6px;
+        }
+
+        /* at top left moves the gradient center */
+        .sample {
+            min-height: 170px;
+            background: radial-gradient(circle at top left, #93c5fd, #1d4ed8);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- @adfarsirofficial | radial-gradient() — Position -->
+    <h1>radial-gradient() — Position</h1>
+    
+
+    <div class="demo">
+        <div class="sample">Gradient center: top left</div>
+    </div>
+
+    <p><small>Classroom demo by @adfarsirofficial</small></p>
+</body>
+</html>
