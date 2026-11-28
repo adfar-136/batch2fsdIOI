@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>backdrop-filter: blur()</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    .samples { display: flex; gap: 24px; flex-wrap: wrap; }
+    .sample { text-align: center; }
+    .art { width: 220px; height: 145px; display: grid; place-items: center; color: white;
+           font-size: 27px; font-weight: bold; border-radius: 12px;
+           background: linear-gradient(125deg, #ec285a 0%, #ffcd38 33%, #0bc5cc 66%, #5547d9 100%); }
+    .hint { color: #555; font-size: 14px; }
+    .scene { height: 200px; width: min(480px, 100%); display: grid; place-items: center;
+                 background: linear-gradient(110deg, tomato, gold, turquoise, royalblue); }
+        /* Backdrop filters the content visible behind this overlay. */
+        .overlay { background: #ffffff55; padding: 25px; border-radius: 14px;
+                   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body>
+  <h1>backdrop-filter: blur()</h1>
+  <p>Backdrop-filter affects what is behind a translucent element, not the element itself.</p>
+  <div class="scene"><div class="overlay">Blurred background behind me</div></div>
+  <p class="hint">Change blur(12px) to blur(0px).</p>
+</body>
+</html>

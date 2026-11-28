@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combining CSS Filters</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    .samples { display: flex; gap: 24px; flex-wrap: wrap; }
+    .sample { text-align: center; }
+    .art { width: 220px; height: 145px; display: grid; place-items: center; color: white;
+           font-size: 27px; font-weight: bold; border-radius: 12px;
+           background: linear-gradient(125deg, #ec285a 0%, #ffcd38 33%, #0bc5cc 66%, #5547d9 100%); }
+    .hint { color: #555; font-size: 14px; }
+    /* Apply this filter to the second example only. */
+        .changed { filter: grayscale(.4) contrast(1.5) brightness(1.1); }
+  </style>
+</head>
+<body>
+  <h1>Combining CSS Filters</h1>
+  <p>Multiple filter functions can be used in one declaration, in the written order.</p>
+  <div class="samples">
+    <div class="sample"><div class="art">ORIGINAL</div><p>Before</p></div>
+    <div class="sample"><div class="art changed">FILTERED</div><p>After</p></div>
+  </div>
+  <p class="hint">Remove one function at a time.</p>
+</body>
+</html>

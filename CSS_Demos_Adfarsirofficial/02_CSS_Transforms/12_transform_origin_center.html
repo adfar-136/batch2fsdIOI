@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform-origin: center</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .stage { min-height: 170px; border: 2px dashed #b5bfd0; background: #f8faff; padding: 18px; overflow: visible; }
+        .box { display: grid; place-items: center; width: 100px; height: 100px;
+               background: royalblue; color: white; font-weight: bold; transition: transform .35s; }
+    .box { transform-origin: center; }
+    /* Change this property and hover over the box. */
+        .box:hover { transform: rotate(40deg); }
+  </style>
+</head>
+<body>
+  <h1>transform-origin: center</h1>
+  <p>The center point is the default pivot used for rotation.</p>
+  <div class="stage"><div class="box">HOVER ME</div></div>
+  <p class="hint">Compare this demo with the top-left origin example.</p>
+</body>
+</html>

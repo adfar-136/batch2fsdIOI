@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform-origin: top left</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .stage { min-height: 170px; border: 2px dashed #b5bfd0; background: #f8faff; padding: 18px; overflow: visible; }
+        .box { display: grid; place-items: center; width: 100px; height: 100px;
+               background: royalblue; color: white; font-weight: bold; transition: transform .35s; }
+    /* Choose the point around which transforms happen. */
+        .box { transform-origin: top left; }
+    /* Change this property and hover over the box. */
+        .box:hover { transform: rotate(40deg); }
+  </style>
+</head>
+<body>
+  <h1>transform-origin: top left</h1>
+  <p>Rotation happens around the top-left corner instead of the center.</p>
+  <div class="stage"><div class="box">HOVER ME</div></div>
+  <p class="hint">Change transform-origin to bottom right.</p>
+</body>
+</html>

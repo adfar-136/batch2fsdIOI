@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical Animation: Loader</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .stage { position: relative; height: 160px; border: 2px dashed #aabbcc;
+                 background: #f8faff; padding: 12px; overflow: hidden; }
+        .ball { width: 60px; height: 60px; border-radius: 12px; background: royalblue; }
+    .ball { border-radius: 50%; background: transparent; border: 8px solid #d9e5ff; border-top-color: royalblue; box-sizing: border-box; }
+    /* Animation for this demonstration. */
+        .ball { animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <h1>Practical Animation: Loader</h1>
+  <p>A continuous rotation creates a simple loading indicator.</p>
+  <div class="stage"><div class="ball"></div></div>
+  <p class="hint">Try a duration of .5s.</p>
+</body>
+</html>

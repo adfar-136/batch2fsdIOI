@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Breakpoints</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .panel { background: #ffc9c9; padding: 30px; }
+        /* Tablet-sized screens and larger. */
+        @media (min-width: 600px) { .panel { background: #ffe5a4; } }
+        /* Wider desktop screens. */
+        @media (min-width: 1000px) { .panel { background: #b9efc3; } }
+  </style>
+</head>
+<body>
+  <h1>Multiple Breakpoints</h1>
+  <p>Two breakpoints let the same element adapt to three width ranges.</p>
+  <div class="panel">Red: small | Yellow: medium | Green: wide</div>
+  <p class="hint">Try widths below 600px, between 600–999px, and 1000px+.</p>
+</body>
+</html>

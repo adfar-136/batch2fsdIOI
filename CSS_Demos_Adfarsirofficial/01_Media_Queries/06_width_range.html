@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Width Range</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .panel { padding: 30px; background: #e4e4e4; }
+        /* Apply only between 500px and 900px (inclusive). */
+        @media (min-width: 500px) and (max-width: 900px) {
+          .panel { background: #a6d8ff; }
+        }
+  </style>
+</head>
+<body>
+  <h1>Media Query Width Range</h1>
+  <p>The and operator combines two media conditions.</p>
+  <div class="panel">Blue only between 500px and 900px.</div>
+  <p class="hint">Try widths of 450px, 700px, and 950px.</p>
+</body>
+</html>

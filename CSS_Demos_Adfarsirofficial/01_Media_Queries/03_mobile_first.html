@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile-First Design</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    /* Base styles apply to smaller screens first. */
+        .cards { display: grid; gap: 12px; }
+        .card { padding: 24px; background: #cfe5ff; }
+        /* Add columns when more space becomes available. */
+        @media (min-width: 700px) {
+          .cards { grid-template-columns: repeat(3, 1fr); }
+        }
+  </style>
+</head>
+<body>
+  <h1>Mobile-First Design</h1>
+  <p>One column by default; three columns from 700px.</p>
+  <div class="cards"><div class="card">Card 1</div><div class="card">Card 2</div><div class="card">Card 3</div></div>
+  <p class="hint">Resize Chrome; notice that the default CSS needs no media query.</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background-blend-mode</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .banner { width: min(450px, 100%); min-height: 180px; display: grid; place-items: center;
+                  color: white; font-weight: bold; font-size: 24px;
+                  /* Both backgrounds are blended inside one element. */
+                  background-image: linear-gradient(#ec295e, #f8d14f), linear-gradient(90deg, #144cd6, #3bddbd);
+                  background-blend-mode: multiply; }
+  </style>
+</head>
+<body>
+  <h1>background-blend-mode</h1>
+  <p>background-blend-mode blends multiple background layers of the same element.</p>
+  <div class="banner">Two blended gradients</div>
+  <p class="hint">Try screen and normal.</p>
+</body>
+</html>

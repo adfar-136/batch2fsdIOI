@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mix-blend-mode: overlay</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .scene { position: relative; height: 220px; width: 350px; max-width: 100%;
+                 background: #f3ce34; overflow: hidden; border-radius: 12px; }
+        .circle { position: absolute; width: 155px; height: 155px; border-radius: 50%; }
+        .left { left: 45px; top: 33px; background: #e94379; }
+        .right { left: 125px; top: 33px; background: #4288f5; }    /* Blend the blue circle with what is beneath it. */
+        .right { mix-blend-mode: overlay; }
+  </style>
+</head>
+<body>
+  <h1>mix-blend-mode: overlay</h1>
+  <p>Combines lightening and darkening effects depending on the backdrop.</p>
+  <div class="scene"><div class="circle left"></div><div class="circle right"></div></div>
+  <p class="hint">Change the mode to normal for comparison.</p>
+</body>
+</html>

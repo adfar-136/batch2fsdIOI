@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    nav { display: flex; flex-direction: column; gap: 10px; background: #e5eefd; padding: 16px; }
+        nav a { color: #18376b; text-decoration: none; }
+        /* On wider screens, place links on one row. */
+        @media (min-width: 650px) {
+          nav { flex-direction: row; justify-content: space-between; }
+        }
+  </style>
+</head>
+<body>
+  <h1>Responsive Navigation</h1>
+  <p>Navigation stacks on mobile and becomes horizontal on wider viewports.</p>
+  <nav><a href="#">Home</a><a href="#">Courses</a><a href="#">Projects</a><a href="#">Contact</a></nav>
+  <p class="hint">Resize the browser to see the layout change.</p>
+</body>
+</html>

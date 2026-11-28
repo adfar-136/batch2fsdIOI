@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical Animation: Pulse</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .stage { position: relative; height: 160px; border: 2px dashed #aabbcc;
+                 background: #f8faff; padding: 12px; overflow: hidden; }
+        .ball { width: 60px; height: 60px; border-radius: 12px; background: royalblue; }
+
+    /* Animation for this demonstration. */
+        .ball { animation: pulse 1.2s ease-in-out infinite alternate; }
+        @keyframes pulse { from { transform: scale(1); } to { transform: scale(1.35); } }
+  </style>
+</head>
+<body>
+  <h1>Practical Animation: Pulse</h1>
+  <p>Scale can make an element gently pulse.</p>
+  <div class="stage"><div class="ball"></div></div>
+  <p class="hint">Try a scale of 1.1.</p>
+</body>
+</html>

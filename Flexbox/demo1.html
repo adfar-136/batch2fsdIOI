@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .container .title{
+            font-weight: bold;
+            font-size: 25px;
+            flex-basis: 100px;
+
+        }
+        .container .links{
+            display: flex;
+            justify-content: space-around;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+            gap: 5px;
+            flex-basis: 40%;
+        }
+        .container .links a{
+            text-decoration: none;
+            color: #fff;
+
+        }
+        .container .auth {
+            display: flex;
+            flex-basis: 10%;
+            gap: 10px;
+            justify-content: space-around;
+
+        }
+        .container button{
+            padding: 10px 20px 10px 20px;
+            border:none;
+            border-radius: 15px;
+            font-size: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Tour3</div>
+        <div class="links">
+            <div>
+                <a href="#">Home</a>
+            </div>
+            <div>
+                <a href="#">Home</a>
+            </div>
+            <div>
+                <a href="#">Home</a>
+            </div>
+            <div>
+                <a href="#">Home</a>
+            </div>
+            <div>
+                <a href="#">Home</a>
+            </div>
+        </div>
+        <div class="auth">
+            <div>
+                <button>Login</button>
+                
+            </div>
+             <div>
+                <button>SIgnup</button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

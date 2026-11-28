@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical Animation: Bouncing Ball</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .stage { position: relative; height: 160px; border: 2px dashed #aabbcc;
+                 background: #f8faff; padding: 12px; overflow: hidden; }
+        .ball { width: 60px; height: 60px; border-radius: 12px; background: royalblue; }
+
+    /* Animation for this demonstration. */
+        .ball { animation: bounce 1s ease-in-out infinite alternate; }
+        @keyframes bounce { from { transform: translateY(0); } to { transform: translateY(75px); } }
+  </style>
+</head>
+<body>
+  <h1>Practical Animation: Bouncing Ball</h1>
+  <p>A repeating up/down movement can be created using translateY().</p>
+  <div class="stage"><div class="ball"></div></div>
+  <p class="hint">Try changing the height and duration.</p>
+</body>
+</html>

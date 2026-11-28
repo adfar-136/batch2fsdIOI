@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orientation Media Query</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .panel { padding: 30px; background: #ffd2bb; }
+        /* Landscape means the viewport is wider than it is tall. */
+        @media (orientation: landscape) {
+          .panel { background: #b8edca; }
+        }
+  </style>
+</head>
+<body>
+  <h1>Orientation Media Query</h1>
+  <p>Landscape and portrait depend on viewport dimensions.</p>
+  <div class="panel">Change the device orientation.</div>
+  <p class="hint">Use Chrome DevTools device toolbar and rotate the simulated device.</p>
+</body>
+</html>

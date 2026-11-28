@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: aquamarine;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 5px;
+            padding: 10px;
+            height: 400px;
+        }
+        .main .item{
+            background-color: brown;
+            height: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item item1" style="order: 3;flex-grow: 3;">A</div>
+        <div class="item item2" style="order: 4; flex-grow: 2;">B</div>
+        <div class="item item3" style="order: 2; flex-grow: 1;">C</div>
+        <div class="item item4" style="order: 1;">D</div>
+    </div>
+</body>
+</html>

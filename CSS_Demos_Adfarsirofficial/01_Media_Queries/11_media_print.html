@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@media print</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .message { background: lightyellow; padding: 20px; }
+        /* Printing removes the background and hides the button. */
+        @media print {
+          .message { background: white; border: 1px solid black; }
+          .print-button { display: none; }
+        }
+  </style>
+</head>
+<body>
+  <h1>@media print</h1>
+  <p>Print styles are used only when printing or previewing a print.</p>
+  <div class="message">This box looks different when printed.</div>
+  <button class="print-button" onclick="window.print()">Print preview</button>
+  <p class="hint">Click Print preview and compare with the page.</p>
+</body>
+</html>

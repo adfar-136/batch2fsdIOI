@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition Shorthand</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .demo { display: inline-block; background: royalblue; color: white; padding: 20px 28px;
+                border: 0; border-radius: 8px; cursor: pointer; font-size: 18px; }
+        .demo:hover { background: tomato; transform: translateX(70px); }
+
+    /* property | duration | timing | delay */
+        .demo { transition: transform 1.2s ease-out .2s; }
+  </style>
+</head>
+<body>
+  <h1>transition Shorthand</h1>
+  <p>The shorthand combines commonly used transition settings.</p>
+  <button class="demo">Hover me</button>
+  <p class="hint">Change each value one at a time.</p>
+</body>
+</html>

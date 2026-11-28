@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Animations</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .stage { position: relative; height: 160px; border: 2px dashed #aabbcc;
+                 background: #f8faff; padding: 12px; overflow: hidden; }
+        .ball { width: 60px; height: 60px; border-radius: 12px; background: royalblue; }
+
+    /* Animation for this demonstration. */
+        .ball { animation: move 2s ease-in-out infinite alternate, fade 2s linear infinite alternate; }
+        @keyframes move { from { transform: translateX(0); } to { transform: translateX(180px); } }
+        @keyframes fade { from { opacity: 1; } to { opacity: .25; } }
+  </style>
+</head>
+<body>
+  <h1>Multiple Animations</h1>
+  <p>Comma-separated animation declarations run multiple keyframe sequences.</p>
+  <div class="stage"><div class="ball"></div></div>
+  <p class="hint">Disable fade to isolate the movement.</p>
+</body>
+</html>

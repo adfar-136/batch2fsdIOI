@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation-direction: alternate-reverse</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .stage { position: relative; height: 160px; border: 2px dashed #aabbcc;
+                 background: #f8faff; padding: 12px; overflow: hidden; }
+        .ball { width: 60px; height: 60px; border-radius: 12px; background: royalblue; }
+
+    /* Animation for this demonstration. */
+        .ball { animation: move 2s infinite alternate-reverse; }
+        @keyframes move { from { transform: translateX(0); } to { transform: translateX(180px); } }
+  </style>
+</head>
+<body>
+  <h1>animation-direction: alternate-reverse</h1>
+  <p>The first cycle starts in reverse, then alternates direction.</p>
+  <div class="stage"><div class="ball"></div></div>
+  <p class="hint">Compare with alternate.</p>
+</body>
+</html>

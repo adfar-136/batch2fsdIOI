@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@media (max-width)</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .card { background: lightgreen; padding: 24px; width: 220px; }
+        /* Apply only at 600px or narrower. */
+        @media (max-width: 600px) {
+          .card { background: lightsalmon; }
+        }
+  </style>
+</head>
+<body>
+  <h1>@media (max-width)</h1>
+  <p>At widths of 600px or less, the background changes.</p>
+  <div class="card">Resize the browser window.</div>
+  <p class="hint">Compare with the min-width demo.</p>
+</body>
+</html>

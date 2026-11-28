@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Font Size</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 24px; }
+    .hint { color: #555; font-size: 14px; margin-top: 22px; }
+    .headline { font-size: 28px; font-weight: bold; }
+        /* Increase the heading only on larger screens. */
+        @media (min-width: 800px) { .headline { font-size: 48px; } }
+  </style>
+</head>
+<body>
+  <h1>Responsive Font Size</h1>
+  <p>Text can change sizes at a breakpoint.</p>
+  <div class="headline">Learn CSS step by step</div>
+  <p class="hint">Try adjusting the breakpoint and font sizes.</p>
+</body>
+</html>

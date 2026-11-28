@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            padding: 10px;
+            border: 2px solid red;
+            display: grid;
+            grid-template-rows: 100px 200px;
+            grid-template-areas: "header header header header header"
+            "sidenav sidenav main main main"
+            "sidenav sidenav main main main"
+            "sidenav sidenav main main main"
+            "footer footer footer footer footer"
+          ;
+        }
+        .header{
+            grid-area: header;
+            border: 1px solid blue;
+            text-align: center;
+        }
+        .sideNav{
+            grid-area: sidenav;
+            border: 1px solid blue;
+
+        }
+        .main{
+            grid-area: main;
+            border: 1px solid blue;
+
+        }
+        .footer{
+            grid-area: footer;
+            border: 1px solid blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sideNav">Side Nav</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
